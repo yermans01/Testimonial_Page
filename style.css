@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+header{
+    padding: 30px;
+}
 body{
     background-color: #FAFAF9;
     font-family: "Sora";
@@ -10,5 +13,46 @@ body{
 .container{
     display: flex;
     justify-content: end;
-    padding: 80px 80px;
+    padding: 100px 100px;
+}
+.estrella{
+    width: 6%;
+    padding-bottom: 10px;
+}
+h1{
+    padding-bottom: 10px;
+}
+p{
+    padding-right: 100px;
+    text-size-adjust: 20px;
+    padding-bottom: 30px;
+}
+ol {
+    list-style-type: none;
+}
+.check{
+    padding-right: 10px;
+    filter: contrast(100%) sepia(1) hue-rotate(120deg) saturate(950%);
+}
+.lado_derecho{
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta1{
+    position: absolute;
+  top: 150px;
+  right: 10px;
+  background-color: red
+}
+.tar_logo{
+    width: 40%;
+    height: auto;
+}
+.tarjeta2{
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
 }
