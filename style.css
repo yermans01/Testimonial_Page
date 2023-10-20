@@ -5,11 +5,12 @@
 }
 body{
     font-family: "Sora";
+    background-color: #FAFAF9;
 }
 .container{
     display: flex;
     padding: 100px;
-    background-color: #FAFAF9;
+
 }
 .lado_izquierdo{
     justify-content: start;
@@ -79,4 +80,60 @@ li{
 .opinion{
     color: #52525A;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+        .contenido{
+                padding-right: 300px;
+        }
+        .estrella{
+            width: 5%;
+        }
+        .tar_1{
+            top: 380px;
+        }
+        .tar_2{
+            top: 600px;
+        }
+}
+@media screen and (max-width: 640px) {
+        header{
+            padding: 20px;
+        }
+        .container{
+            padding: 1px;
+            font-size: 13px;
+        }
+        .lado_izquierdo{
+            padding: 10px;
+            width: 790px;
+            size: 20px;
+        }
+        li{
+            padding-right: 430px;
+            font-size: 10px;
+        }
+        .contenido{
+            margin-right: 200px;
+        }
+        .lado_derecho{
+            flex-direction: column;
+        }
+        .tar_1{
+                width: 200px;
+                right: 30px;
+                top: 370px;
+                font-size: 10px;
+            }
+        .tar_2{
+                width: 200px;
+                top: 540px;
+                right: 90px;
+                font-size: 10px;
+        }
 }
